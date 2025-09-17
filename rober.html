@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PaginaWebSobreObesidadySobrepeso</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Estilos propios -->
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9fdfb;
+    }
+    /* Navbar */
+    .navbar {
+          background-color: #0a2e27; /* verde oscuro */;
+    }
+    .navbar .nav-link, 
+    .navbar .navbar-brand {
+      color: #fff !important;
+    }
+    .navbar .nav-link:hover {
+      color: #00a859 !important;
+    }
+
+    /* Hero */
+    .hero {
+      background: #e8f9f0;
+      padding: 100px 0;
+    }
+    .hero h1 {
+      font-weight: 700;
+      color: #6ee5f5;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #6ee5f5;
+    }
+    .btn-main {
+      background: #00a859;
+      color: #fff;
+      border-radius: 30px;
+      padding: 12px 30px;
+      font-weight: 600;
+    }
+    .btn-main:hover {
+      background: #0a2e57;
+      color: #fff;
+    }
+
+    /* Servicios */
+    .service-box {
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+      transition: all .3s ease;
+    }
+    .service-box h4 {
+      color: #0a2e57;
+      font-weight: 600;
+    }
+    .service-box:hover {
+      transform: translateY(-5px);
+      border: 1px solid #00a859;
+    }
+
+    /* Doctores */
+    .doctor-card img {
+      border: 5px solid #00a859;
+    }
+    .doctor-card h5 {
+      color: #0a2e57;
+      font-weight: 600;
+    }
+
+    /* Contacto */
+    form input, form textarea {
+      border-radius: 10px;
+      border: 1px solid #ddd;
+    }
+    form input:focus, form textarea:focus {
+      border-color: #00a859;
+      box-shadow: none;
+    }
+
+    /* Footer */
+    footer {
+      background: #0a2e57;
+      color: #fff;
+      padding: 30px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg shadow-sm">
+  <div class="container">
+    <!-- Marca con enlace externo -->
+    <a class="navbar-brand fw-bold" href="https://www.cmeuniversidad.com/" target="_blank">Centro Mexicano De Estomatología Mexicano</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <!-- Inicio -->
+        <li class="nav-item">
+          <a class="nav-link" href="#hero1">Inicio</a>
+        </li>
+        <!-- Servicios -->
+        <li class="nav-item">
+          <a class="nav-link" href="#obesidad">Información</a>
+        </li>
+        <!-- Doctores -->
+        <li class="nav-item">
+          <a class="nav-link" href="#quienes-somos">Nutriólogos</a>
+        </li>
+        <!-- Contacto -->
+        <li class="nav-item">
+          <a class="nav-link" href="#footer">Contáctanos</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Titulo 1: Bienvenido a Ven y ConóCME -->
+<section id="hero1" class="hero d-flex align-items-center" style="background-image: url('C:/Users/Usuario 1/Desktop/NutriWeb/CME.png');">
+  <div class="overlay"></div>
+  <div class="container text-center">
+    <h1 class="display-3 fw-bold hero-title">Bienvenido a Ven y ConóCME</h1>
+    <p class="lead hero-subtitle">Formación profesional en diversas áreas</p>
+    <a href="#quienes-somos" class="btn btn-lg btn-success mt-3">Conócenos</a>
+  </div>
+</section>
+
+<style>
+.hero {
+  position: relative;
+  min-height: 50vh; /* reduce la altura de la sección */
+  background: size 150px; /* ajusta el tamaño de la imagen */
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+</style>
+
+<!-- Titulo 2: Mejor Centro Médico y de Salud con video de fondo -->
+<section class="hero text-center position-relative" style="min-height: 60vh; overflow: hidden;">
+  
+  <!-- Video de fondo -->
+  <div class="video-bg position-absolute top-0 start-0 w-100 h-100">
+    <iframe src="https://www.youtube.com/embed/GwnCZgGDCm4?autoplay=1&mute=1&loop=1&playlist=GwnCZgGDCm4" 
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
+            style="width:100%; height:100%; object-fit:cover;"></iframe>
+  </div>
+
+  <!-- Overlay oscuro -->
+  <div class="overlay position-absolute top-0 start-0 w-100 h-100" 
+       style="background: rgba(0,0,0,0.5);"></div>
+
+  <!-- Contenido encima del video -->
+  <div class="container position-relative z-1">
+    <h1 class="hero-title">El Mejor Centro Médico y de Salud</h1>
+    <p class="hero-subtitle">Obtén la mejor atención y experiencia con nuestros nutriólogos profesionales.</p>
+    <a href="#contacto" class="btn btn-main mt-3">Agenta tu Cita</a>
+  </div>
+</section>
+
+<style>
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.video-bg iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* evita interferir con clicks */
+}
+</style>
+
+<!-- Estilos para ambos heroes -->
+<style>
+.hero {
+  position: relative;
+  min-height: 70vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* capa oscura con transparencia */
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1; /* asegura que el texto quede encima */
+  color: #fff;
+}
+
+/* Estilo de títulos y subtítulos */
+.hero-title {
+  color: #d4f4dd; /* verde muy claro, contraste con fondo verde */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* sombra para resaltar */
+  font-weight: 800;
+  line-height: 1.2;
+  /* efecto biselado sutil */
+  text-shadow:
+     1px 1px 0 #ffffff, 
+     2px 2px 0 rgba(0,0,0,0.6);
+}
+
+.hero-subtitle {
+  color: #e6f8e0; /* verde más suave */
+  font-weight: 700;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+}
+</style>
+
+
+
+
+
+
+
+
+
+<!-- Servicios -->
+<section id="obesidad" class="py-5" style="background-color: #013220; color: #fff;">
+  <div class="container">
+<h2 class="text-center mb-5" style="
+    color: #a8e6cf; 
+    font-size: 3rem; 
+    text-shadow: 
+      2px 2px 4px rgba(0,0,0,0.5), /* sombra principal */
+      -1px -1px 2px rgba(255,255,255,0.3); /* efecto bisel */
+    font-weight: 700;
+">
+  Obesidad y Sobrepeso
+</h2>    <div class="row g-4">
+
+      <!-- ¿Qué es la obesidad y el sobrepeso? -->
+<div class="col-md-6 col-lg-4">
+  <div class="card h-100 shadow custom-card hover-card">
+    <div class="card-body">
+      <h5 class="card-title" style="color: #b2ffb2;">¿Qué es la obesidad y el sobrepeso?</h5>
+      <p>La obesidad y el sobrepeso ocurren cuando se acumula un exceso de grasa corporal que puede afectar la salud. Se mide con el <strong>Índice de Masa Corporal (IMC)</strong>.</p>
+      <ul>
+        <li><strong>Sobrepeso:</strong> IMC entre 25 y 29.9</li>
+        <li><strong>Obesidad:</strong> IMC de 30 o más</li>
+      </ul>
+    </div>
+
+    <!-- Recuadro flotante (aparece al hover) -->
+    <div class="extra-info">
+      <h6>Dato adicional</h6>
+      <p>La obesidad es considerada una <strong>epidemia global</strong> por la OMS, y afecta a más de 650 millones de adultos en el mundo.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Estilos -->
+<style>
+/* Estilo base de la tarjeta */
+.hover-card {
+  position: relative;
+  background-color: #1e3d2f;
+  border-radius: 15px;
+  transition: transform 0.3s;
+  overflow: hidden;
+  color: #f4fff4;
+}
+.hover-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Recuadro flotante */
+.extra-info {
+  position: absolute;
+  inset: 0; /* ocupa todo el espacio de la tarjeta */
+  background: rgba(0, 168, 89, 0.95); /* verde más vivo con transparencia */
+  color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Mostrar al pasar el cursor */
+.hover-card:hover .extra-info {
+  opacity: 1;
+  transform: scale(1);
+}
+</style>
+
+      
+
+ <!-- Causas principales -->
+<div class="col-md-6 col-lg-4">
+  <div class="card h-100 shadow custom-card hover-card">
+    <div class="card-body">
+      <h5 class="card-title" style="color: #b2ffb2;">Causas principales</h5>
+      <ul>
+        <li>Alimentación poco saludable</li>
+        <li>Sedentarismo</li>
+        <li>Factores genéticos y hormonales</li>
+        <li>Estrés y falta de sueño</li>
+        <li>Factores sociales y ambientales</li>
+      </ul>
+    </div>
+
+    <!-- Recuadro flotante (aparece al hover) -->
+    <div class="extra-info">
+      <h6>Dato adicional</h6>
+      <p>La obesidad suele ser el resultado de una combinación de factores <strong>biológicos, conductuales y ambientales</strong>, no solo de la alimentación.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Estilos -->
+<style>
+/* Estilo base de la tarjeta */
+.hover-card {
+  position: relative;
+  background-color: #1e3d2f;
+  border-radius: 15px;
+  transition: transform 0.3s;
+  overflow: hidden;
+  color: #f4fff4;
+}
+.hover-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Recuadro flotante */
+.extra-info {
+  position: absolute;
+  inset: 0; /* ocupa todo el espacio de la tarjeta */
+  background: rgba(0, 168, 89, 0.95); /* verde más vivo con transparencia */
+  color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Mostrar al pasar el cursor */
+.hover-card:hover .extra-info {
+  opacity: 1;
+  transform: scale(1);
+}
+</style>
+
+ <!-- Consecuencias -->
+<div class="col-md-6 col-lg-4">
+  <div class="card h-100 shadow custom-card hover-card">
+    <div class="card-body">
+      <h5 class="card-title" style="color: #b2ffb2;">Consecuencias</h5>
+      <ul>
+        <li>Diabetes tipo 2</li>
+        <li>Hipertensión arterial</li>
+        <li>Problemas cardíacos</li>
+        <li>Apnea del sueño</li>
+        <li>Problemas en articulaciones</li>
+        <li>Impacto en la autoestima</li>
+      </ul>
+    </div>
+
+    <!-- Recuadro flotante (aparece al hover) -->
+    <div class="extra-info">
+      <h6>Dato adicional</h6>
+      <p>La obesidad aumenta el riesgo de <strong>mortalidad prematura</strong> y puede reducir la esperanza de vida en <strong>5 a 20 años</strong> según su gravedad.</p>
+    </div>
+  </div>
+</div>
+
+<style>
+/* Estilo base de la tarjeta */
+.hover-card {
+  position: relative;
+  background-color: #1e3d2f;
+  border-radius: 15px;
+  transition: transform 0.3s;
+  overflow: hidden;
+  color: #f4fff4;
+}
+.hover-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Recuadro flotante */
+.extra-info {
+  position: absolute;
+  inset: 0; /* ocupa todo el espacio de la tarjeta */
+  background: rgba(0, 168, 89, 0.95); /* verde más vivo con transparencia */
+  color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Mostrar al pasar el cursor */
+.hover-card:hover .extra-info {
+  opacity: 1;
+  transform: scale(1);
+}
+</style>
+
+ <!-- Prevención -->
+<div class="col-md-6 col-lg-4">
+  <div class="card h-100 shadow custom-card hover-card">
+    <div class="card-body">
+      <h5 class="card-title" style="color: #b2ffb2;">Prevención</h5>
+      <ul>
+        <li>Alimentación equilibrada</li>
+        <li>30 min de ejercicio diario</li>
+        <li>Dormir 7–9 horas</li>
+        <li>Evitar bebidas azucaradas</li>
+        <li>Reducir tiempo en pantallas</li>
+      </ul>
+    </div>
+
+    <!-- Recuadro flotante (aparece al hover) -->
+    <div class="extra-info">
+      <h6>Consejo extra</h6>
+      <p>Pequeños cambios diarios como <strong>caminar más</strong>, <strong>tomar agua</strong> en lugar de refresco y <strong>cocinar en casa</strong> reducen notablemente el riesgo de obesidad.</p>
+    </div>
+  </div>
+</div>
+
+<style>
+/* Estilo base de la tarjeta */
+.hover-card {
+  position: relative;
+  background-color: #1e3d2f;
+  border-radius: 15px;
+  transition: transform 0.3s;
+  overflow: hidden;
+  color: #f4fff4;
+}
+.hover-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Recuadro flotante */
+.extra-info {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 168, 89, 0.95);
+  color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Mostrar al pasar el cursor */
+.hover-card:hover .extra-info {
+  opacity: 1;
+  transform: scale(1);
+}
+</style>
+
+
+<!-- Alimentación saludable -->
+<div class="col-md-6 col-lg-4">
+  <div class="card h-100 shadow custom-card hover-card">
+    <div class="card-body">
+      <h5 class="card-title" style="color: #b2ffb2;">Alimentación saludable</h5>
+      <ul>
+        <li>Preferir comida casera</li>
+        <li>Tomar suficiente agua</li>
+        <li>Controlar porciones</li>
+        <li>Evitar ultraprocesados</li>
+      </ul>
+    </div>
+
+    <!-- Recuadro flotante (aparece al hover) -->
+    <div class="extra-info">
+      <h6>Consejo nutricional</h6>
+      <p>Una dieta saludable incluye <strong>frutas, verduras, granos integrales</strong> y limitar azúcares añadidos y grasas saturadas. 🍎🥦</p>
+    </div>
+  </div>
+</div>
+
+<style>
+/* Estilo base de la tarjeta */
+.hover-card {
+  position: relative;
+  background-color: #1e3d2f;
+  border-radius: 15px;
+  transition: transform 0.3s;
+  overflow: hidden;
+  color: #f4fff4;
+}
+.hover-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Recuadro flotante */
+.extra-info {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 168, 89, 0.95);
+  color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Mostrar al pasar el cursor */
+.hover-card:hover .extra-info {
+  opacity: 1;
+  transform: scale(1);
+}
+</style>
+
+
+ <!-- Actividad física -->
+<div class="col-md-6 col-lg-4">
+  <div class="card h-100 shadow custom-card hover-card">
+    <div class="card-body">
+      <h5 class="card-title" style="color: #b2ffb2;">Importancia de la actividad física</h5>
+      <p>La actividad física ayuda a controlar el peso, mejorar la salud del corazón, reducir el estrés y aumentar la energía.</p>
+    </div>
+
+    <!-- Recuadro flotante (aparece al hover) -->
+    <div class="extra-info">
+      <h6>Dato saludable</h6>
+      <p>Se recomienda al menos <strong>150 minutos de actividad moderada</strong> a la semana 🏃‍♀️🚴‍♂️ para mantener una buena salud.</p>
+    </div>
+  </div>
+</div>
+
+<style>
+/* Estilo base de la tarjeta */
+.hover-card {
+  position: relative;
+  background-color: #1e3d2f;
+  border-radius: 15px;
+  transition: transform 0.3s;
+  overflow: hidden;
+  color: #f4fff4;
+}
+.hover-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Recuadro flotante */
+.extra-info {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 168, 89, 0.95);
+  color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Mostrar al pasar el cursor */
+.hover-card:hover .extra-info {
+  opacity: 1;
+  transform: scale(1);
+}
+</style>
+
+
+<!-- Mitos comunes -->
+<div class="col-md-6 col-lg-4">
+  <div class="card h-100 shadow custom-card hover-card">
+    <div class="card-body">
+      <h5 class="card-title" style="color: #b2ffb2;">Mitos comunes</h5>
+      <ul>
+        <li><strong>Mito:</strong> “Es solo voluntad” <br><strong>Realidad:</strong> influyen factores genéticos y sociales.</li>
+        <li><strong>Mito:</strong> “Las dietas rápidas funcionan” <br><strong>Realidad:</strong> los cambios sostenibles son mejores.</li>
+      </ul>
+    </div>
+
+    <!-- Recuadro flotante (aparece al hover) -->
+    <div class="extra-info">
+      <h6>Dato importante</h6>
+      <p>Los mitos sobre la obesidad dificultan su tratamiento. Reconocer que es una <strong>condición multifactorial</strong> ayuda a combatir el estigma y promover cambios reales.</p>
+    </div>
+  </div>
+</div>
+
+<style>
+/* Estilo base de la tarjeta */
+.hover-card {
+  position: relative;
+  background-color: #1e3d2f;
+  border-radius: 15px;
+  transition: transform 0.3s;
+  overflow: hidden;
+  color: #f4fff4;
+}
+.hover-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Recuadro flotante */
+.extra-info {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 168, 89, 0.95);
+  color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Mostrar al pasar el cursor */
+.hover-card:hover .extra-info {
+  opacity: 1;
+  transform: scale(1);
+}
+</style>
+
+
+ <!-- Recursos y apoyo -->
+<div class="col-md-6 col-lg-4">
+  <div class="card h-100 shadow custom-card hover-card">
+    <div class="card-body">
+      <h5 class="card-title" style="color: #b2ffb2;">Recursos y apoyo</h5>
+      <ul>
+        <li>Profesionales de la salud</li>
+        <li>Grupos de apoyo</li>
+        <li>Apps de nutrición y ejercicio</li>
+      </ul>
+    </div>
+
+    <!-- Recuadro flotante (aparece al hover) -->
+    <div class="extra-info">
+      <h6>Dato importante</h6>
+      <p>Contar con <strong>apoyo profesional y comunitario</strong> aumenta las posibilidades de éxito en el manejo del peso y en la adopción de hábitos saludables.</p>
+    </div>
+  </div>
+</div>
+<style>
+/* Estilo base de la tarjeta */
+.hover-card {
+  position: relative;
+  background-color: #1e3d2f;
+  border-radius: 15px;
+  transition: transform 0.3s;
+  overflow: hidden;
+  color: #f4fff4;
+}
+.hover-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Recuadro flotante */
+.extra-info {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 168, 89, 0.95);
+  color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Mostrar al pasar el cursor */
+.hover-card:hover .extra-info {
+  opacity: 1;
+  transform: scale(1);
+}
+</style>
+
+
+   <!-- Historias de éxito -->
+<div class="col-md-6 col-lg-4">
+  <div class="card h-100 shadow custom-card hover-card">
+    <div class="card-body">
+      <h5 class="card-title" style="color: #b2ffb2;">Historias de éxito</h5>
+      <p>Pequeños cambios como caminar más, elegir agua sobre refresco o comer más verduras mejoran la salud de forma sostenible.</p>
+    </div>
+
+    <!-- Recuadro flotante (aparece al hover) -->
+    <div class="extra-info">
+      <h6>Ejemplo real</h6>
+      <p>Muchas personas logran mejorar su calidad de vida al adoptar <strong>hábitos graduales y constantes</strong>, demostrando que los cambios sostenibles son más efectivos que las soluciones rápidas.</p>
+    </div>
+  </div>
+</div>
+<style>
+/* Estilo base de la tarjeta */
+.hover-card {
+  position: relative;
+  background-color: #1e3d2f;
+  border-radius: 15px;
+  transition: transform 0.3s;
+  overflow: hidden;
+  color: #f4fff4;
+}
+.hover-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Recuadro flotante */
+.extra-info {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 168, 89, 0.95);
+  color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Mostrar al pasar el cursor */
+.hover-card:hover .extra-info {
+  opacity: 1;
+  transform: scale(1);
+}
+</style>
+
+
+    </div>
+  </div>
+</section>
+
+
+<style>
+  /* Efecto hover en las tarjetas */
+  .custom-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+  }
+
+  /* Ajuste de textos y listas para mejor contraste */
+  .card-body p, .card-body ul, .card-body li {
+    color: #d4f4dd;
+  }
+
+  .card-body h5 {
+    font-weight: bold;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Doctores -->
+<section id="quienes-somos" class="py-5" style="background-color: #013220; color: #fff;">
+  <div class="container text-center">
+    <h2 class="text-center mb-5" style="
+    color: #a8e6cf; 
+    font-size: 3rem; 
+    text-shadow: 
+      2px 2px 4px rgba(0,0,0,0.5), /* sombra principal */
+      -1px -1px 2px rgba(255,255,255,0.3); /* efecto bisel */
+    font-weight: 700;
+">Quiénes Somos</h2>
+    <div class="row g-4 justify-content-center">
+
+      <!-- Tarjeta de doctor -->
+      <div class="col-md-4 col-lg-2">
+        <div class="doctor-card p-3" style="background-color: #1e3d2f; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.4); transition: 0.3s;">
+          <div class="doctor-img mb-3" style="width: 100px; height: 100px; border-radius: 50%; background-color: #76c893; margin: 0 auto;"></div>
+          <h5 style="color: #b2ffb2;">Daniel Solano Aguirre</h5>
+          <p style="color: #d4f4dd;">Nutriólogo</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-2">
+        <div class="doctor-card p-3" style="background-color: #1e3d2f; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.4); transition: 0.3s;">
+          <div class="doctor-img mb-3" style="width: 100px; height: 100px; border-radius: 50%; background-color: #76c893; margin: 0 auto;"></div>
+          <h5 style="color: #b2ffb2;">Otoniel Chagala Villegas </h5>
+          <p style="color: #d4f4dd;">Nutriólogo</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-2">
+        <div class="doctor-card p-3" style="background-color: #1e3d2f; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.4); transition: 0.3s;">
+          <div class="doctor-img mb-3" style="width: 100px; height: 100px; border-radius: 50%; background-color: #76c893; margin: 0 auto;"></div>
+          <h5 style="color: #b2ffb2;">Isac Rivas Baes</h5>
+          <p style="color: #d4f4dd;">Nutriólogo</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-2">
+        <div class="doctor-card p-3" style="background-color: #1e3d2f; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.4); transition: 0.3s;">
+          <div class="doctor-img mb-3" style="width: 100px; height: 100px; border-radius: 50%; background-color: #76c893; margin: 0 auto;"></div>
+          <h5 style="color: #b2ffb2;">Luis Ángel Jimenénez Piene</h5>
+          <p style="color: #d4f4dd;">Nutriólogo</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-lg-2">
+        <div class="doctor-card p-3" style="background-color: #1e3d2f; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.4); transition: 0.3s;">
+          <div class="doctor-img mb-3" style="width: 100px; height: 100px; border-radius: 50%; background-color: #76c893; margin: 0 auto;"></div>
+          <h5 style="color: #b2ffb2;">Roberto Castro Castillo</h5>
+          <p style="color: #d4f4dd;">Nutriólogo</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Efecto hover en las tarjetas */
+  .doctor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+  }
+
+/* Para imágenes de los doctores (local) */
+.doctor-img {
+  background-image: url('C:/Users/Usuario 1/Desktop/NutriWeb/doc.jpg'); /* Ruta relativa a tu archivo HTML */
+  background-size: cover;
+  background-position: center;
+  width: 100px;  /* tamaño de la imagen */
+  height: 100px;
+  border-radius: 50%; /* opcional, para hacerla circular */
+}
+
+</style>
+
+
+<!-- Contacto -->
+<section id="contacto" class="py-5" style="background-color: #013220; color: #fff;">
+  <div class="container">
+    <h2 class="text-center mb-5" style="
+    color: #a8e6cf; 
+    font-size: 3rem; 
+    text-shadow: 
+      2px 2px 4px rgba(0,0,0,0.5), /* sombra principal */
+      -1px -1px 2px rgba(255,255,255,0.3); /* efecto bisel */
+    font-weight: 700;
+">Agendar una Cita</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form style="background-color: #1e3d2f; padding: 30px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
+          
+          <div class="mb-3">
+            <label for="nombre" class="form-label" style="color:#b2ffb2;">Nombre completo</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" style="border-radius: 10px; border: none;">
+          </div>
+          
+          <div class="mb-3">
+            <label for="email" class="form-label" style="color:#b2ffb2;">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="correo@ejemplo.com" style="border-radius: 10px; border: none;">
+          </div>
+          
+          <div class="mb-3">
+            <label for="telefono" class="form-label" style="color:#b2ffb2;">Teléfono</label>
+            <input type="tel" class="form-control" id="telefono" placeholder="(00) 0000-0000" style="border-radius: 10px; border: none;">
+          </div>
+          
+          <div class="mb-3">
+            <label for="motivo" class="form-label" style="color:#b2ffb2;">Motivo de la cita</label>
+            <textarea class="form-control" id="motivo" rows="4" placeholder="Escribe aquí el motivo de tu cita" style="border-radius: 10px; border: none;"></textarea>
+          </div>
+          
+          <button type="submit" class="btn w-100" style="background-color: #a8e6cf; color:#013220; font-weight: bold; border-radius: 10px; transition: 0.3s;">
+            Enviar
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Efecto hover en el botón */
+  .btn:hover {
+    background-color: #76c893 !important;
+    color: #fff !important;
+  }
+
+  /* Placeholder más visible */
+  ::placeholder {
+    color: #d4f4dd;
+    opacity: 1;
+  }
+</style>
+
+<!-- Footer -->
+<footer id="footer" class="footer py-5">
+  <div class="container">
+    <div class="row text-white text-center text-md-start">
+      <!-- Logo y aviso -->
+      <div class="col-md-4 mb-4">
+        <h2 class="fw-bold" style="font-family: 'Brush Script MT', cursive;">Ven y ConóCME</h2>
+        <p><a href="#" class="text-white text-decoration-none fw-bold">Consulta Nuestro Aviso de Privacidad</a></p>
+      </div>
+
+      <!-- Redes sociales -->
+      <div class="col-md-4 mb-4 text-center">
+        <h5 class="fw-bold mb-3">Síguenos en:</h5>
+        <a href="#" class="text-white fs-3 me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white fs-3 me-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white fs-3"><i class="bi bi-youtube"></i></a>
+      </div>
+
+      <!-- Dirección Plantel Puebla -->
+      <div class="col-md-2 mb-4">
+        <h6 class="fw-bold">PLANTEL PUEBLA</h6>
+        <p class="mb-1">41 Poniente 510, Col. Gabriel Pastor 1ra Sección, C.P. 72420 Puebla, Pue.</p>
+        <p class="mb-1">Tel. (222) 887 7865</p>
+        <p>(222) 211 2395</p>
+      </div>
+
+      <!-- Dirección Clínica -->
+      <div class="col-md-2 mb-4">
+        <h6 class="fw-bold">CLÍNICA</h6>
+        <p class="mb-1">Privada 3 B Sur 3917, Col. Gabriel Pastor 1ra Sección, C.P. 72420 Puebla, Pue.</p>
+        <p class="mb-1">Tel. (222) 240 1448</p>
+        <p>(222) 237 6703</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Estilos -->
+<style>
+  .footer {
+    background-color: #0d6f49; /* verde oscuro */
+  }
+  .footer h2 {
+    font-size: 2rem;
+    color: #a8f0d0;
+  }
+  .footer a {
+    transition: 0.3s;
+  }
+  .footer a:hover {
+    color: #00a859 !important;
+  }
+</style>
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
